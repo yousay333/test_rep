@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"> </head>
+<body>
+  <form action="/cgi-bin/note2tab.py" method="post">
+   <h1>TAB変換テスト</h1>
+   <hr>
+   	音階を元に、TABパターンを生成します。<br />
+	変換したい音階を追加後、クエリ送信ボタンを押してください。
+	<br />
+	座標:<input type="text" name="coordinate" size="10">
+	<input type="submit" name="submit" value="音階を追加"/><br />
+	
+	<br /><br />
+	
+	<img src=images/th.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;
+		    <input type="checkbox" name="note" value="H1G" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="H1F" />--				   ||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="H1E" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="H1D" />--          	   ||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="H1C" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="M1B" />--          	   ||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="M1A" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="M1G" />--          	   ||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="M1F" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="M1E" />--          	   ||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="M1D" />&nbsp;&nbsp;&nbsp;||<br />
+		   -<input type="checkbox" name="note" value="M1C" />-           	   ||<br />
+	<br /><br />
+
+	<img src=images/he.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;
+
+		    <input type="checkbox" name="note" value="L1B" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="L1A" />--          &nbsp;||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="L1G" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="L1F" />--          &nbsp;||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="L1E" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="L1D" />--          &nbsp;||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="L1C" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="L2B" />--          &nbsp;||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="L2A" />&nbsp;&nbsp;&nbsp;||<br />
+		  --<input type="checkbox" name="note" value="L2G" />--          &nbsp;||<br />
+&nbsp;&nbsp;<input type="checkbox" name="note" value="L2F" />&nbsp;&nbsp;&nbsp;||<br />
+  </form>
+  	
+  <form action="/cgi-bin/note2tab.py" method="post">
+	<input type="submit" name="submit" value="TAB変換開始"/><br />
+  </form>
+
+</body>
+</html>
