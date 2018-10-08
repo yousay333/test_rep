@@ -12,8 +12,9 @@
 	<input type="submit" name="submit" value="音階を追加"/><br />
 	
 	<br /><br />
-	
-	<img src=images/th.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;
+	  {% load static %}
+	   <img src="{% static "th.jpg" %}">
+	 <!-- <img src=images/th.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;-->
 		    <input type="checkbox" name="note" value="H1G" />&nbsp;&nbsp;&nbsp;||<br />
 		  --<input type="checkbox" name="note" value="H1F" />--				   ||<br />
 &nbsp;&nbsp;<input type="checkbox" name="note" value="H1E" />&nbsp;&nbsp;&nbsp;||<br />
@@ -28,7 +29,8 @@
 		   -<input type="checkbox" name="note" value="M1C" />-           	   ||<br />
 	<br /><br />
 
-	<img src=images/he.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;
+	   <img src="{% static "he.jpg" %}">
+	 <!-<img src=images/he.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;-->
 
 		    <input type="checkbox" name="note" value="L1B" />&nbsp;&nbsp;&nbsp;||<br />
 		  --<input type="checkbox" name="note" value="L1A" />--          &nbsp;||<br />

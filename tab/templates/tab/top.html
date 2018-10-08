@@ -7,37 +7,45 @@
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
 
-        	<br /><br />
+    <br /><br />
+ 	{% load static %}
+ 	<div class="float-left">
+	    <img src="{% static "th.png" %}" height=250px width=50px>
+	</div>
+    <div class="box-text">
+		||&nbsp;&nbsp;H1G<br/>
+		||--H1F--<br />
+		||&nbsp;&nbsp;H1E<br/>
+		||--H1D--<br />
+		||&nbsp;&nbsp;H1C<br/>
+		||--M1B--<br />
+		||&nbsp;&nbsp;M1A<br/>
+		||--M1G--<br />
+		||&nbsp;&nbsp;M1F<br/>
+		||--M1E--<br />
+		||&nbsp;&nbsp;M1D<br/>
+		||&nbsp-M1C-&nbsp<br />
+	</div>
+	<br class="clear">
 
-	<img src=.
-	/images/th.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;
-		    <input type="checkbox" name="note" value="H1G" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="H1F" />--				   ||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="H1E" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="H1D" />--          	   ||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="H1C" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="M1B" />--          	   ||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="M1A" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="M1G" />--          	   ||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="M1F" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="M1E" />--          	   ||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="M1D" />&nbsp;&nbsp;&nbsp;||<br />
-		   -<input type="checkbox" name="note" value="M1C" />-           	   ||<br />
-	<br /><br />
-
-	<img src=./images/he.jpg style="float:left;margin:10pix width="250" height="250">&nbsp;&nbsp;
-
-		    <input type="checkbox" name="note" value="L1B" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="L1A" />--          &nbsp;||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="L1G" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="L1F" />--          &nbsp;||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="L1E" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="L1D" />--          &nbsp;||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="L1C" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="L2B" />--          &nbsp;||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="L2A" />&nbsp;&nbsp;&nbsp;||<br />
-		  --<input type="checkbox" name="note" value="L2G" />--          &nbsp;||<br />
-&nbsp;&nbsp;<input type="checkbox" name="note" value="L2F" />&nbsp;&nbsp;&nbsp;||<br />
-        <button type="submit" class="save btn btn-default">Note Add</button>
+	<div class="float-left">
+	<img src="{% static "he.png" %}" height=250px width=50px>
+	</div>
+    <div class="box-text">
+		||&nbsp;&nbsp;L1B<br/>
+		||--L1A--<br />
+		||&nbsp;&nbsp;L1G<br/>
+		||--L1F--<br />
+		||&nbsp;&nbsp;L1E<br/>
+		||--L1D--<br />
+		||&nbsp;&nbsp;L1C<br/>
+		||--L2B--<br />
+		||&nbsp;&nbsp;L2A<br/>
+		||--L2G--<br />
+		||&nbsp;&nbsp;L2F<br/>
+	</div>
+	<br class="clear">      
+	
+	<button type="submit" class="save btn btn-default">Note Add</button>
     </form>
 {% endblock %}
