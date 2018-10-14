@@ -7,24 +7,25 @@
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
 
-    <br /><br />
+    <br />
+	<h1>View</h1><Hr>
  	{% load static %}
  	<div class="float-left">
 	    <img src="{% static "th.png" %}" height=250px width=50px>
 	</div>
     <div class="box-text">
-		||&nbsp;&nbsp;H1G&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--H1F--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;H1E&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--H1D--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;H1C&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--M1B--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;M1A&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--M1G--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;M1F&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--M1E--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;M1D&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||&nbsp;-M1C-&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
+		||H1G||:{{</br>
+		||H1F||</br>
+		||H1E||</br>
+		||H1D||</br>
+		||H1C||</br>
+		||M1B||</br>
+		||M1A||</br>
+		||M1G||</br>
+		||M1F||</br>
+		||M1E||</br>
+		||M1D||</br>
+		||M1C||</br>
 	</div>
 	<br class="clear">
 
@@ -32,20 +33,90 @@
 	<img src="{% static "he.png" %}" height=250px width=50px>
 	</div>
     <div class="box-text">
-		||&nbsp;&nbsp;L1B&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--L1A--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;L1G&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--L1F--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;L1E&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--L1D--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;L1C&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--L2B--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;L2A&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
-		||--L2G--||----------------||----------------||----------------||----------------||<br/>
-		||&nbsp;&nbsp;L2F&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br/>
+		||L1B||</br>
+		||L1A||</br>
+		||L1G||</br>
+		||L1F||</br>
+		||L1E||</br>
+		||L1D||</br>
+		||L1C||</br>
+		||L2B||</br>
+		||L2A||</br>
+		||L2G||</br>
+		||L2F||</br>
 	</div>
 	<br class="clear">      
-	
+	<Hr>
+	<h1>Control</h1>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="H1G" />:H1G</br>
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="H1F" />:H1F</br>
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="H1E" />:H1E
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="H1D" />:H1D
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="H1C" />:H1C
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="M1B" />:M1B
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="M1A" />:M1A
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="M1G" />:M1G
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="M1F" />:M1F
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="M1E" />:M1E
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="M1D" />:M1D
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="M1C" />:M1C
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L1B" />:L1B
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L1A" />:L1A
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L1G" />:L1G
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L1F" />:L1F
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L1E" />:L1E
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L1D" />:L1D
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L1C" />:L1C
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L2B" />:L2B
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L2A" />:L2A
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L2G" />:L2G
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" name="note" value="L2F" />:L2F
+	</label>
 	<button type="submit" class="save btn btn-default">Note Add</button>
     </form>
 {% endblock %}
