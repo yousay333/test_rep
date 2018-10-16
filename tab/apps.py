@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class TabConfig(AppConfig):
+class BlogConfig(AppConfig):
     name = 'tab'
