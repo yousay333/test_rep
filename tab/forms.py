@@ -6,4 +6,4 @@ class PostNote(forms.ModelForm):
 
     class Meta:
         model = Note
-        fields = ('title', 'text',)
+        fields = ('H1G', )
