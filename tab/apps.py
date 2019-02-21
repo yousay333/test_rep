@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class BlogConfig(AppConfig):
-    name = 'tab'
+class N2TConfig(AppConfig):
+    name = 'n2t'
