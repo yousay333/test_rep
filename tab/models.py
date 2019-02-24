@@ -1,9 +1,8 @@
 from django.db import models
-from django.utils import timezone
-
 
 class Note(models.Model):
 #	NoteList={H1G,H1F,H1E,H1D,H1C,M1B,M1A,M1G,M1F,M1E,M1D,M1,L1B,L1A,L1G,L1F,L1E,L1D,L1C,L2B,L2A,L2G,L2F}
+	TIME = models.PositiveIntegerField()
 	H1G = models.TextField()
 #	H1F = models.TextField()
 #	H1E = models.TextField()
