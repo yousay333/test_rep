@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gunicorn',
-    'tab.apps.N2TConfig',
+    'n2t',
 ]
 
 MIDDLEWARE = [

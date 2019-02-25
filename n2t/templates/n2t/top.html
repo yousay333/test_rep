@@ -1,4 +1,4 @@
-{% extends 'tab/base.html' %}
+{% extends 'n2t/base.html' %}
 
 {% block content %}
     <h1>Description</h1>
@@ -25,18 +25,18 @@
 	    <img src="{% static "th.png" %}" height=250px width=50px>
 	</div>
     <div class="note">
-		||H1G||{{note.H1G}}</br>
-		||H1F||</br>
-		||H1E||</br>
-		||H1D||</br>
-		||H1C||</br>
-		||M1B||</br>
-		||M1A||</br>
-		||M1G||</br>
-		||M1F||</br>
-		||M1E||</br>
-		||M1D||</br>
-		||M1C||</br>
+		||H1G||{{note.H1G|yesno "ô,-,"}}</br>
+		||H1F||{{note.H1F|yesno "ô,-,"}}</br>
+		||H1E||{{note.H1E|yesno "ô,-,"}}</br>
+		||H1D||{{note.H1D|yesno "ô,-,"}}</br>
+		||H1C||{{note.H1C|yesno "ô,-,"}}</br>
+		||M1B||{{note.M1B|yesno "ô,-,"}}</br>
+		||M1A||{{note.M1A|yesno "ô,-,"}}</br>
+		||M1G||{{note.M1G|yesno "ô,-,"}}</br>
+		||M1F||{{note.M1F|yesno "ô,-,"}}</br>
+		||M1E||{{note.M1E|yesno "ô,-,"}}</br>
+		||M1D||{{note.M1D|yesno "ô,-,"}}</br>
+		||M1C||{{note.M1C|yesno "ô,-,"}}</br>
 	</div>
 	<br class="clear">
 
@@ -44,17 +44,17 @@
 	<img src="{% static "he.png" %}" height=250px width=50px>
 	</div>
     <div class="box-text">
-		||L1B||</br>
-		||L1A||</br>
-		||L1G||</br>
-		||L1F||</br>
-		||L1E||</br>
-		||L1D||</br>
-		||L1C||</br>
-		||L2B||</br>
-		||L2A||</br>
-		||L2G||</br>
-		||L2F||</br>
+		||L1B||{{note.L1B|yesno "ô,-,"}}</br>
+		||L1A||{{note.L1A|yesno "ô,-,"}}</br>
+		||L1G||{{note.L1G|yesno "ô,-,"}}</br>
+		||L1F||{{note.L1F|yesno "ô,-,"}}</br>
+		||L1E||{{note.L1E|yesno "ô,-,"}}</br>
+		||L1D||{{note.L1D|yesno "ô,-,"}}</br>
+		||L1C||{{note.L1C|yesno "ô,-,"}}</br>
+		||L2B||{{note.L2B|yesno "ô,-,"}}</br>
+		||L2A||{{note.L2A|yesno "ô,-,"}}</br>
+		||L2G||{{note.L2G|yesno "ô,-,"}}</br>
+		||L2F||{{note.L2F|yesno "ô,-,"}}</br>
 	</div>
 	<br class="clear">      
 	<Hr>
