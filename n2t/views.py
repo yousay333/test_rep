@@ -7,4 +7,5 @@ def top(request):
     return render(request, 'n2t/top.html', {'note': note})
     
 def edit(request):
+	values = request.POST.getlist('note')
 	return render(request, 'n2t/edit.html')

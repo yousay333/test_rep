@@ -7,17 +7,7 @@
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
     <br />
-    
-   	<h1>debug(by blog)</h1><Hr>
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
+
 
 	<h1>View</h1><Hr> 	
  	{% load static %} 	
@@ -25,18 +15,18 @@
 	    <img src="{% static "th.png" %}" height=250px width=50px>
 	</div>
     <div class="note">
-		||H1G||{{note.H1G|yesno "ÅÙ,-,"}}</br>
-		||H1F||{{note.H1F|yesno "ÅÙ,-,"}}</br>
-		||H1E||{{note.H1E|yesno "ÅÙ,-,"}}</br>
-		||H1D||{{note.H1D|yesno "ÅÙ,-,"}}</br>
-		||H1C||{{note.H1C|yesno "ÅÙ,-,"}}</br>
-		||M1B||{{note.M1B|yesno "ÅÙ,-,"}}</br>
-		||M1A||{{note.M1A|yesno "ÅÙ,-,"}}</br>
-		||M1G||{{note.M1G|yesno "ÅÙ,-,"}}</br>
-		||M1F||{{note.M1F|yesno "ÅÙ,-,"}}</br>
-		||M1E||{{note.M1E|yesno "ÅÙ,-,"}}</br>
-		||M1D||{{note.M1D|yesno "ÅÙ,-,"}}</br>
-		||M1C||{{note.M1C|yesno "ÅÙ,-,"}}</br>
+		||H1G||{{note.H1G}}<label class="checkbox-inline"><input type="checkbox" name="note" value="H1G" /></br>
+		||H1F||{{note.H1F}}</br>
+		||H1E||{{note.H1E}}</br>
+		||H1D||{{note.H1D}}</br>
+		||H1C||{{note.H1C}}</br>
+		||M1B||{{note.M1B}}</br>
+		||M1A||{{note.M1A}}</br>
+		||M1G||{{note.M1G}}</br>
+		||M1F||{{note.M1F}}</br>
+		||M1E||{{note.M1E}}</br>
+		||M1D||{{note.M1D}}</br>
+		||M1C||{{note.M1C}}</br>
 	</div>
 	<br class="clear">
 
@@ -44,23 +34,21 @@
 	<img src="{% static "he.png" %}" height=250px width=50px>
 	</div>
     <div class="box-text">
-		||L1B||{{note.L1B|yesno "ÅÙ,-,"}}</br>
-		||L1A||{{note.L1A|yesno "ÅÙ,-,"}}</br>
-		||L1G||{{note.L1G|yesno "ÅÙ,-,"}}</br>
-		||L1F||{{note.L1F|yesno "ÅÙ,-,"}}</br>
-		||L1E||{{note.L1E|yesno "ÅÙ,-,"}}</br>
-		||L1D||{{note.L1D|yesno "ÅÙ,-,"}}</br>
-		||L1C||{{note.L1C|yesno "ÅÙ,-,"}}</br>
-		||L2B||{{note.L2B|yesno "ÅÙ,-,"}}</br>
-		||L2A||{{note.L2A|yesno "ÅÙ,-,"}}</br>
-		||L2G||{{note.L2G|yesno "ÅÙ,-,"}}</br>
-		||L2F||{{note.L2F|yesno "ÅÙ,-,"}}</br>
+		||L1B||{{note.L1B}}</br>
+		||L1A||{{note.L1A}}</br>
+		||L1G||{{note.L1G}}</br>
+		||L1F||{{note.L1F}}</br>
+		||L1E||{{note.L1E}}</br>
+		||L1D||{{note.L1D}}</br>
+		||L1C||{{note.L1C}}</br>
+		||L2B||{{note.L2B}}</br>
+		||L2A||{{note.L2A}}</br>
+		||L2G||{{note.L2G}}</br>
+		||L2F||{{note.L2F}}</br>
 	</div>
 	<br class="clear">      
+
 	<Hr>
-	<h1>Control</h1>
-	<label class="checkbox-inline">
-		<input type="checkbox" name="note" value="H1G" />:H1G</br>
 	<button type="submit" class="save btn btn-default">Note Add</button>
     </form>
 {% endblock %}

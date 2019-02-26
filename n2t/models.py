@@ -1,7 +1,8 @@
 from django.db import models
 
+
 class Note(models.Model):
-	TIME = models.PositiveIntegerField()
+	COORDINATE = models.PositiveIntegerField()
 	H1G = models.BooleanField()
 	H1F = models.BooleanField()
 	H1E = models.BooleanField()
