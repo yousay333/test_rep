@@ -4,10 +4,6 @@
     <h1>Description</h1>
     <h5>Please check note box that you want to convert to TAB and fill in the coordiinate.</br>
         Then push "Add"button.</h5>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-    <br />
-
 
 	<h1>View</h1><Hr> 	
  	{% load static %} 	
@@ -15,7 +11,7 @@
 	    <img src="{% static "th.png" %}" height=250px width=50px>
 	</div>
     <div class="note">
-		||H1G||{{note.H1G}}<label class="checkbox-inline"><input type="checkbox" name="note" value="H1G" /></br>
+		||H1G||{{note.H1G}}</br>
 		||H1F||{{note.H1F}}</br>
 		||H1E||{{note.H1E}}</br>
 		||H1D||{{note.H1D}}</br>
@@ -46,7 +42,15 @@
 		||L2G||{{note.L2G}}</br>
 		||L2F||{{note.L2F}}</br>
 	</div>
-	<br class="clear">      
+	<br class="clear">
+	<Hr>
+
+	<h1>Control</h1><Hr> 	
+    <form method="POST" class="post-form">{% csrf_token %}
+	{{ form.note.label }}:
+	{% for note in form.note %}
+		{{ note }}
+	{% endfor %}
 
 	<Hr>
 	<button type="submit" class="save btn btn-default">Note Add</button>
