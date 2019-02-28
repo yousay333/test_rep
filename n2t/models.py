@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Note(models.Model):
 	COORDINATE = models.PositiveIntegerField()
 	H1G = models.BooleanField()

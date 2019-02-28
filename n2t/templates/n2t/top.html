@@ -45,12 +45,11 @@
 	<br class="clear">
 	<Hr>
 
-	<h1>Control</h1><Hr> 	
-    <form method="POST" class="post-form">{% csrf_token %}
-	{{ form.note.label }}:
-	{% for note in form.note %}
-		{{ note }}
-	{% endfor %}
+	<h1>Control</h1><Hr>
+	<form method="POST" class="post-form">{% csrf_token %}
+
+	{{ form.as_p }}
+	<a href="{% url 'note_new' %}" >aiueo</a>
 
 	<Hr>
 	<button type="submit" class="save btn btn-default">Note Add</button>
