@@ -14,9 +14,12 @@ def note_new(request):
 	if request.method == "POST":
 		note = NoteForm(request.POST)
 		if form.is_valid():
-			note = form.save(commit=False)
+			note = form.save(commit=True)
 			note.save()
-			return redirect(note_top, pk=note.pk)
+			return render(n2t/top.html, pk=note.pk)
 	else:
 		form = NoteForm()
-	return render(request, "n2t/top.html", {"form": form})
+	return render(request, "n2t/new.html", {"form": form})
+
+def note_tab(request):
+	return render(request, "n2t/tab.html")
