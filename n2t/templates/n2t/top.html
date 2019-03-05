@@ -11,35 +11,35 @@
 	    <img src="{% static "th.png" %}" height=250px width=50px>
 	</div>
     <div class="note">
-		||H1G||{{note.H1G}}</br>
-		||H1F||{{note.H1F}}</br>
-		||H1E||{{note.H1E}}</br>
-		||H1D||{{note.H1D}}</br>
-		||H1C||{{note.H1C}}</br>
-		||M1B||{{note.M1B}}</br>
-		||M1A||{{note.M1A}}</br>
-		||M1G||{{note.M1G}}</br>
-		||M1F||{{note.M1F}}</br>
-		||M1E||{{note.M1E}}</br>
-		||M1D||{{note.M1D}}</br>
-		||M1C||{{note.M1C}}</br>
+		||H1G||{% for note in notes %}{% if note.H1G %}ÅÙ{% else %}-{% endif %}{% endfor %}</br>
+		||H1F||{% for note in notes %}{{ note.H1F }}{% endfor %}</br>
+		||H1E||{% for note in notes %}{{ note.H1E }}{% endfor %}</br>
+		||H1D||{% for note in notes %}{{ note.H1D }}{% endfor %}</br>
+		||H1C||{% for note in notes %}{{ note.H1C }}{% endfor %}</br>
+		||M1B||{% for note in notes %}{{ note.M1B }}{% endfor %}</br>
+		||M1A||{% for note in notes %}{{ note.M1A }}{% endfor %}</br>
+		||M1G||{% for note in notes %}{{ note.M1G }}{% endfor %}</br>
+		||M1F||{% for note in notes %}{{ note.M1F }}{% endfor %}</br>
+		||M1E||{% for note in notes %}{{ note.M1E }}{% endfor %}</br>
+		||M1D||{% for note in notes %}{{ note.M1D }}{% endfor %}</br>
+		||M1C||{% for note in notes %}{{ note.M1C }}{% endfor %}</br>
 	</div>
 	<br class="clear">
 
 	<div class="float-left">
 		<img src="{% static "he.png" %}" height=250px width=50px>
 	</div>
-		||L1B||{{note.L1B}}</br>
-		||L1A||{{note.L1A}}</br>
-		||L1G||{{note.L1G}}</br>
-		||L1F||{{note.L1F}}</br>
-		||L1E||{{note.L1E}}</br>
-		||L1D||{{note.L1D}}</br>
-		||L1C||{{note.L1C}}</br>
-		||L2B||{{note.L2B}}</br>
-		||L2A||{{note.L2A}}</br>
-		||L2G||{{note.L2G}}</br>
-		||L2F||{{note.L2F}}</br>
+		||L1B||{% for note in notes %}{{ note.L1B }}{% endfor %}</br>
+		||L1A||{% for note in notes %}{{ note.L1A }}{% endfor %}</br>
+		||L1G||{% for note in notes %}{{ note.L1G }}{% endfor %}</br>
+		||L1F||{% for note in notes %}{{ note.L1F }}{% endfor %}</br>
+		||L1E||{% for note in notes %}{{ note.L1E }}{% endfor %}</br>
+		||L1D||{% for note in notes %}{{ note.L1D }}{% endfor %}</br>
+		||L1C||{% for note in notes %}{{ note.L1C }}{% endfor %}</br>
+		||L2B||{% for note in notes %}{{ note.L2B }}{% endfor %}</br>
+		||L2A||{% for note in notes %}{{ note.L2A }}{% endfor %}</br>
+		||L2G||{% for note in notes %}{{ note.L2G }}{% endfor %}</br>
+		||L2F||{% for note in notes %}{{ note.L2F }}{% endfor %}</br>
 	<br class="clear">
 	<Hr>
 

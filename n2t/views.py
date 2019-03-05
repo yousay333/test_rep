@@ -4,19 +4,17 @@ from .forms import NoteForm
 from .models import Note
 
 def top(request):
-	note = get_object_or_404(Note, pk=1)
-#	d={'form':forms.NoteForm(),}
-	return render(request, 'n2t/top.html', {'note': note})
-#   return render(request, 'n2t/top.html', d)
+	notes = Note.objects.order_by('COORDINATE')
+	return render(request, 'n2t/top.html', {'notes': notes})
 
 
 def note_new(request):
 	if request.method == "POST":
-		note = NoteForm(request.POST)
+		form = NoteForm(request.POST)
 		if form.is_valid():
 			note = form.save(commit=True)
 			note.save()
-			return render(n2t/top.html, pk=note.pk)
+			return redirect(top)
 	else:
 		form = NoteForm()
 	return render(request, "n2t/new.html", {"form": form})
