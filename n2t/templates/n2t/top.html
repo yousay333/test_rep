@@ -5,46 +5,45 @@
     <h5>Please check note box that you want to convert to TAB and fill in the coordiinate.</br>
         Then push "Add"button.</h5>
 
-	<h1>View</h1><Hr> 	
+	<h1>View</h1><Hr>
+	<a href="{% url 'note_new' %}" class="note_add"><button type="submit" class="save btn btn-default">Note Edit</button></a>
+	<a href="{% url 'note_tab' %}" class="tab_menu"><button type="submit" class="save btn btn-default">Let's N2T!!</button></a>
+
  	{% load static %} 	
  	<div class="float-left">
 	    <img src="{% static "th.png" %}" height=250px width=50px>
 	</div>
     <div class="note">
-		||H1G||{% for note in notes %}{% if note.H1G %}��{% else %}-{% endif %}{% endfor %}</br>
-		||H1F||{% for note in notes %}{{ note.H1F }}{% endfor %}</br>
-		||H1E||{% for note in notes %}{{ note.H1E }}{% endfor %}</br>
-		||H1D||{% for note in notes %}{{ note.H1D }}{% endfor %}</br>
-		||H1C||{% for note in notes %}{{ note.H1C }}{% endfor %}</br>
-		||M1B||{% for note in notes %}{{ note.M1B }}{% endfor %}</br>
-		||M1A||{% for note in notes %}{{ note.M1A }}{% endfor %}</br>
-		||M1G||{% for note in notes %}{{ note.M1G }}{% endfor %}</br>
-		||M1F||{% for note in notes %}{{ note.M1F }}{% endfor %}</br>
-		||M1E||{% for note in notes %}{{ note.M1E }}{% endfor %}</br>
-		||M1D||{% for note in notes %}{{ note.M1D }}{% endfor %}</br>
-		||M1C||{% for note in notes %}{{ note.M1C }}{% endfor %}</br>
+		||H1G||{% for note in notes %}{{ note.H1G|yesno:"♪, " }}{% endfor %}</br>
+		||H1F||{% for note in notes %}{{ note.H1F|yesno:"♪,-" }}{% endfor %}</br>
+		||H1E||{% for note in notes %}{{ note.H1E|yesno:"♪, " }}{% endfor %}</br>
+		||H1D||{% for note in notes %}{{ note.H1D|yesno:"♪,-" }}{% endfor %}</br>
+		||H1C||{% for note in notes %}{{ note.H1C|yesno:"♪, " }}{% endfor %}</br>
+		||M1B||{% for note in notes %}{{ note.M1B|yesno:"♪,-" }}{% endfor %}</br>
+		||M1A||{% for note in notes %}{{ note.M1A|yesno:"♪, " }}{% endfor %}</br>
+		||M1G||{% for note in notes %}{{ note.M1G|yesno:"♪,-" }}{% endfor %}</br>
+		||M1F||{% for note in notes %}{{ note.M1F|yesno:"♪, " }}{% endfor %}</br>
+		||M1E||{% for note in notes %}{{ note.M1E|yesno:"♪,-" }}{% endfor %}</br>
+		||M1D||{% for note in notes %}{{ note.M1D|yesno:"♪, " }}{% endfor %}</br>
+		||M1C||{% for note in notes %}{{ note.M1C|yesno:"♪, " }}{% endfor %}</br>
 	</div>
 	<br class="clear">
 
 	<div class="float-left">
 		<img src="{% static "he.png" %}" height=250px width=50px>
 	</div>
-		||L1B||{% for note in notes %}{{ note.L1B }}{% endfor %}</br>
-		||L1A||{% for note in notes %}{{ note.L1A }}{% endfor %}</br>
-		||L1G||{% for note in notes %}{{ note.L1G }}{% endfor %}</br>
-		||L1F||{% for note in notes %}{{ note.L1F }}{% endfor %}</br>
-		||L1E||{% for note in notes %}{{ note.L1E }}{% endfor %}</br>
-		||L1D||{% for note in notes %}{{ note.L1D }}{% endfor %}</br>
-		||L1C||{% for note in notes %}{{ note.L1C }}{% endfor %}</br>
-		||L2B||{% for note in notes %}{{ note.L2B }}{% endfor %}</br>
-		||L2A||{% for note in notes %}{{ note.L2A }}{% endfor %}</br>
-		||L2G||{% for note in notes %}{{ note.L2G }}{% endfor %}</br>
-		||L2F||{% for note in notes %}{{ note.L2F }}{% endfor %}</br>
+		||L1B||{% for note in notes %}{{ note.L1B|yesno:"♪, " }}{% endfor %}</br>
+		||L1A||{% for note in notes %}{{ note.L1A|yesno:"♪,-" }}{% endfor %}</br>
+		||L1G||{% for note in notes %}{{ note.L1G|yesno:"♪, " }}{% endfor %}</br>
+		||L1F||{% for note in notes %}{{ note.L1F|yesno:"♪,-" }}{% endfor %}</br>
+		||L1E||{% for note in notes %}{{ note.L1E|yesno:"♪, " }}{% endfor %}</br>
+		||L1D||{% for note in notes %}{{ note.L1D|yesno:"♪,-" }}{% endfor %}</br>
+		||L1C||{% for note in notes %}{{ note.L1C|yesno:"♪, " }}{% endfor %}</br>
+		||L2B||{% for note in notes %}{{ note.L2B|yesno:"♪,-" }}{% endfor %}</br>
+		||L2A||{% for note in notes %}{{ note.L2A|yesno:"♪, " }}{% endfor %}</br>
+		||L2G||{% for note in notes %}{{ note.L2G|yesno:"♪,-" }}{% endfor %}</br>
+		||L2F||{% for note in notes %}{{ note.L2F|yesno:"♪, " }}{% endfor %}</br>
 	<br class="clear">
 	<Hr>
-
-	<h1>Control</h1><Hr>
-	<a href="{% url 'note_new' %}" class="note_add"><button type="submit" class="save btn btn-default">Note Add</button></a>
-	<a href="{% url 'note_tab' %}" class="tab_menu"><button type="submit" class="save btn btn-default">Let's N2T!!</button></a>
 
 {% endblock %}
