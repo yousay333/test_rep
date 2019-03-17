@@ -5,4 +5,5 @@ urlpatterns = [
     path('', views.top, name='top'),
     path('n2t/new/', views.note_new, name='note_new'), 
     path('n2t/tab/', views.note_tab, name='note_tab'), 
+    path('n2t/edit/', views.note_edit, name='note_edit'),
 ]

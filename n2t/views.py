@@ -21,3 +21,11 @@ def note_new(request):
 
 def note_tab(request):
 	return render(request, "n2t/tab.html")
+	
+def note_edit(request):
+	
+	
+	return
+	
+def note_detail(request):
+	return
