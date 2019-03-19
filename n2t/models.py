@@ -2,7 +2,7 @@ from django.db import models
 
 class Note(models.Model):
 	COORDINATE = models.PositiveIntegerField()
-	NAME = models.CharField(max_length=128)
+	title = models.CharField(max_length=128)
 	H1G = models.BooleanField(default=0)
 	H1F = models.BooleanField(default=0)
 	H1E = models.BooleanField(default=0)

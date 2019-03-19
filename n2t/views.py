@@ -24,8 +24,8 @@ def note_tab(request):
 	
 def note_edit(request):
 	
-	
 	return
 	
-def note_detail(request):
-	return
+def note_detail(request, pk):
+    note = get_object_or_404(Note, pk=pk)
+    return render(request, 'blog/post_detail.html', {'note': note})
